@@ -1,0 +1,38 @@
+.top-bar {
+    background-color: #f2f2f2;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 50px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-info p {
+    margin: 10px;
+  }
+  
+  .hero-image {
+    background-image: url("pictures/bg10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: calc(100vh - 60px); /* Subtract navbar height from viewport height */
+    height: 600px;
+  }
+
+  .container-fluid{
+    margin: 0;
+  }
+
+  #tekst{
+    padding-top: 300px;
+    padding-bottom: auto;
+  }
