@@ -1,10 +1,11 @@
 .top-bar {
-    background-color: #f2f2f2;
+    background-color: #25066e;
     height: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 14px;
+    color: white;
     padding-right: 20px;
     padding-left: 50px;
   }
@@ -24,10 +25,11 @@
     background-image: url("pictures/bg10.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /*height: calc(100vh - 60px); /* Subtract navbar height from viewport height */
-    height: 600px;
+    height: calc(100vh - 60px); /* Subtract navbar height from viewport height */
+    /*height: 600px;*/
   }
-
+  
+  
   .container-fluid{
     margin: 0;
   }
@@ -36,3 +38,88 @@
     padding-top: 300px;
     padding-bottom: auto;
   }
+
+  .nav-link {
+    color: #25066e ;
+    text-align: center;
+  }
+
+  .nav-link:hover {
+    background-color: #25066e;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+
+
+  /*.navbar-toggler{
+    margin-right: px;
+    position: center;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }*/
+
+  @media (min-width: 768px) {
+    .navbar-nav .nav-item:first-child {
+      margin-right: px;
+    }
+  }
+
+  .navbar-nav .nav-item:not(:first-child) {
+    margin-right: px;
+  }
+
+  .navbar-nav li {
+    margin-left: 10px; /* add margin to the left of each navbar item */
+    margin-right: 10px;
+  }
+
+ 
+  
+  .desktop-logo {
+    display: block;
+  }
+  
+  .mobile-logo {
+    display: none;
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .desktop-logo {
+      display: none;
+    }
+    
+    .mobile-logo {
+      display: block;
+      
+    }
+  }
+
+  .navbar-brand img {
+    max-width: 500px; /* change the value to the maximum width you want */
+  }
+
+  /* for mobile devices with screen width less than 576px */
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+      max-width: 200px; /* change the value to the maximum width you want for mobile */
+    }
+  }
+
+/*
+@media (max-width: 575.98px) {
+    .navbar-brand {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  
+  
+  
