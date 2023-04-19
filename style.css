@@ -1,3 +1,4 @@
+/*****TOP_BAR*****/
 .top-bar {
     background-color: #25066e;
     height: 30px;
@@ -21,15 +22,9 @@
     margin: 10px;
   }
   
-  .hero-image {
-    background-image: url("pictures/bg10.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 60px); /* Subtract navbar height from viewport height */
-    /*height: 600px;*/
-  }
   
   
+  /*****NAVBAR*****/
   .container-fluid{
     margin: 0;
   }
@@ -41,27 +36,21 @@
 
   .nav-link {
     color: #25066e ;
-    text-align: center;
+    
   }
 
   .nav-link:hover {
     background-color: #25066e;
     color: #fff;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
   }
 
 
 
-  /*.navbar-toggler{
-    margin-right: px;
+  .navbar-toggler{
+    margin-right: 20px;
     position: center;
   }
-
-  .navbar-toggler {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }*/
 
   @media (min-width: 768px) {
     .navbar-nav .nav-item:first-child {
@@ -78,15 +67,18 @@
     margin-right: 10px;
   }
 
- 
+  .navbar-nav{
+    margin-right: px;
+  }
   
   .desktop-logo {
     display: block;
+    margin-left: 100px;
   }
   
   .mobile-logo {
     display: none;
-    
+    padding-left: 20px;
   }
   
   @media only screen and (max-width: 768px) {
@@ -101,7 +93,7 @@
   }
 
   .navbar-brand img {
-    max-width: 500px; /* change the value to the maximum width you want */
+    max-width: 400px; /* change the value to the maximum width you want */
   }
 
   /* for mobile devices with screen width less than 576px */
@@ -109,17 +101,42 @@
     .navbar-brand img {
       max-width: 200px; /* change the value to the maximum width you want for mobile */
     }
-  }
+}
 
-/*
-@media (max-width: 575.98px) {
-    .navbar-brand {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+/*****HERO*****/
+.hero-image {
+    background-image: url("pictures/bg10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 60px); /* Subtract navbar height from viewport height 
+    height: 400px;*/
+    background-attachment: fixed;
+    background-position: center;
   }
+  
+.extra-space{
+  margin-bottom: 100px;
+} 
 
-  
-  
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  margin-top: 70px;
+}
+.btn-warning:hover {
+  background-color: #ffa000;
+  border-color: #ffa000;
+}
+
+#tekst{
+  font-weight: 100;
+}
+
+
+/*****FOOTER*****/
+
+.bottom-text {
+  position: absolute;
+  bottom: 0;
+}
   
