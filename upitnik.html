@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="2PABFpwUenBb_WjBSR3PW-NeYx0T1Dln6eoG9-oPGXA" />
-    <title>Projektiranje</title>
-    <meta name="description" content="Prva stavka prilikom upuštanja u izgradnju solarne elektrane je izrada projektne dokumentacije, odnosno izrada projekta.">
+    <title>Besplatni upitnik</title>
+    <meta name="description" content="Ispunite upitnik za besplatnu evaluaciju projekta.">
     <link rel="shortcut icon" type="image/png" href="pictures/favorit.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
@@ -68,47 +68,67 @@
     </nav>
 
 
-
-    <!--SADRŽAJ-->
-    <div class="container mt-5 ">
-        <div class="row">
-          <div class="col-md-6 ">
-            <h2 style="margin-bottom: 32px;">Projektiranje</h2>
-            <div class="text-justify">
-                <p>
-                    Prva stavka prilikom upuštanja u izgradnju solarne elektrane je izrada projektne dokumentacije, odnosno izrada projekta.
-                </p>
-                <p>
-                    Prilikom projektiranja bitno je da elektrana bude što optimalnija kako bi sustav bio što efikasniji, a povrat investicije što kraći.
-                    Također, prilikom izrade projekta bitno je poznavati zakonske regulative, protokole sa HEP-om, tržište i kvalitetu opreme.
-                </p>
-                <p>
-                    Kao tvrtka pratimo svako od tih područja, a uz to nudimo i  informacije vezane za sufinanciranja od strane gradova, županija, države pa i Europske unije.
-                    Za Vas odrađujemo kompletnu komunikaciju i papirologiju sa HEP-om i opskrbljivačima, dok Vas paralelno informiramo vezano uz iste.
-                </p> 
-                <p>
-                    Obratite nam se putem <a href="index.html#kontakt-forma" style="">kontakt forme</a> ili <a href="">upitnika za besplatnu evaluaciju projekta</a>, a naš tim stručnih inženjera će Vam se povratno javiti sa traženim informacijama.                
-                </p>
+    <!--SADRŽAJ-UPITNIK-->
+    <div class="container mt-5 mb-5" id="kontakt-forma">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h1 class="text-center mb-4">Ispunite upitnik</h1>
+          <h5 class="text-center mb-5">Naš tim inženjera obraditi će podatke te ćete dobiti besplatan izračun i ponudu projekta u najkraćem mogućem roku</h5>
+          <form id="upitnik">
+            <div class="form-group mb-2>">
+              <label for="name">Ime i prezime</label>
+              <input type="text" class="form-control" id="name" name="name" required>
             </div>
-            <p>Nudimo izradu projekta za razne sustave kao što su:</p>
-            <ul>
-                <li>Mrežni sustavi</li>
-                <li>Hibridni sustavi (kombinacija mreže i baterija)</li>
-                <li>Sustavi sa optimizatorima</li>
-                <li>Sustavi sa mikroinverterima</li>
-              </ul>
-                
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-12">
-                <img src="pictures/projektiranje1.jpg" class="img-fluid mb-3" alt="Image 1">
-              </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">E-mail adresa</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group mb-2>">
+              <label for="phone-number">Broj mobitela</label>
+              <input type="text" class="form-control" id="broj" name="broj" required>
+            </div>
+            <div class="form-group mb-2>">
+              <label for="location">Lokacija projekta</label>
+              <input type="text" class="form-control" id="lokacija" name="lokacija" required>
+            </div>
+            <div class="form-group mb-2>">
+              <label for="name">Okvirna godišnja potrošnja struje (u KWH)</label>
+              <input type="text" class="form-control" id="potrosnja" name="potrosnja" required>
+            </div>
+            <label class="mt-3" for="name">Vrsta krova:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="krov" id="krov" value="ravni" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Ravni
+              </label>
+            </div>
+            <div class="form-check mb-4">
               
+              <input class="form-check-input" type="radio" name="krov" id="krov" value="kosi">
+              <label class="form-check-label" for="exampleRadios2">
+                Kosi
+              </label>
             </div>
-          </div>
+            <div class="form-group mb-2>">
+              <label for="name">Dimenzije krovišta</label>
+              <input type="text" class="form-control" id="dimenzije" name="dimenzije" required>
+            </div>
+            <div class="form-group mb-2>">
+              <label for="name">Prema kojoj strani svijeta je okrenut krov?</label>
+              <input type="text" class="form-control" id="orijentacija" name="orijentacija" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Napomena</label>
+              <textarea class="form-control" id="napomena" name="napomena" rows="3"></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Pošalji</button>
+          </form>
+          <div id="status2"></div>
         </div>
       </div>
+    </div>
+
 
 
 
@@ -116,19 +136,7 @@
 
     <!--FOOTER_IMAGE-->
     <div class="container-fluid mt-5  d-flex justify-content-center align-items-center" id="footer_image">
-      <div class="card" id="formular">       
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-9">
-              <h5 class="card-title">Besplatni izračun i ponuda solarne elektrane</h5>
-              <p class="card-text">Ispunite upitnik, a naš tim će evaluirati projekt i poslati ponudu.</p>
-            </div>
-            <div class="col">
-              <button class="btn btn-primary" id="tipka_formular">Upitnik</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
 
 
@@ -244,7 +252,7 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- Footer -->
+    <!-- Footer --> 
     
     
 
@@ -264,5 +272,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/upitnik.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/10.2.0/validator.min.js"></script>
 </body>
 </html>

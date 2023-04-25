@@ -12,7 +12,7 @@ $message = $_POST['message'];
 $to = 'info@solareng.eu';
 
 // Set the email subject and message
-$subject = 'New message from ' . $name;
+$subject = 'Nova poruka od: ' . $name;
 $message = "Name: $name\nEmail: $email\nMessage: $message";
 
 // Set the headers
