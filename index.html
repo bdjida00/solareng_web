@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 <body>
+    
 
     <!--TOP_BAR-->
     <div class="top-bar">
@@ -42,15 +44,19 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item  order-3">
+              <a id="upitnik-nav" class="nav-link" href="upitnik.html" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Upitnik</a>
+            </li>
             <li class="nav-item  order-2">
-              <a class="nav-link  " href="#kontakt" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Kontakt</a>
+              <a id="nav-link" class="nav-link" href="#kontakt" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Kontakt</a>
             </li>
             <li class="nav-item  order-1">
-              <a class="nav-link" href="#nase_usluge" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Naše usluge</a>
+              <a id="nav-link" class="nav-link" href="#nase_usluge" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Naše usluge</a>
             </li>
             <li class="nav-item  order-0">
-              <a class="nav-link" href="index.html" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Početna</a>
+              <a id="nav-link" class="nav-link" href="index.html" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Početna</a>
             </li>
+            
             <!--<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
@@ -70,15 +76,32 @@
 
     <!--HERO_IMAGE-->
     <div class="container-fluid text-center extra-space" id="hero">
+      
         <div class="row">
-            <div  class="col-md-12 text-center">
-              <h1 class="text-white" id="tekst">MODERNA RJEŠENJA FOTONAPONSKIH SUSTAVA</h1>
+            <div  class="col-md-12 text-center">             
+              <h1 class="text-white" id="hero_text">MODERNA RJEŠENJA FOTONAPONSKIH SUSTAVA</h1>
             </div>
         </div>
-        <a href="#kontakt" class="btn btn-warning"><b>Kontaktirajte nas</b></a>
+        <div id="saznajte_vise">
+        <a href="#text" id="saznajte_vise_text">
+          <i class="bi bi-arrow-down"></i>
+          <b>SAZNAJTE VIŠE</b>
+          
+        </a>
+        </div>
     </div>
 
-    
+    <!--TEXT-->
+
+    <div class="container mt-5 text-center">
+      <div id="text">
+      <h1>Smanjite račune za struju</h1>
+      <h3>Prosječni povrat investicija je 5-8 godina u slučaju EU subvencija
+        i mnogo kraće. Garanacija na linearni pad proizvodnje električne
+        energije panela je 25godina.</h3>
+      </div>
+    </div>
+
 
     <!--CARDS-->
     <div class="container mt-5 " id="nase_usluge">
@@ -87,7 +110,7 @@
       
       <div class="row">
         <div class="col-md-4 mt-4">
-          <div class="card shadow">
+          <div id="card" class="card shadow">
             <a href="projektiranje.html">
               <img src="pictures/projektiranje.jpg" class="card-img-top" alt="Image 1">
             </a>
@@ -99,19 +122,19 @@
           </div>
         </div>
         <div class="col-md-4 mt-4">
-          <div class="card shadow">
-            <a href="on_grid.html">
+          <div id="card" class="card shadow">
+            <a href="on-grid.html">
               <img src="pictures/on_grid.png" class="card-img-top" alt="Image 2">
             </a>
             <div class="card-body">
               <h5 class="card-title">Mrežni fotonaponski sustavi</h5>
               <p class="card-text">Solarne elektrane povezane sa električnom mrežom, bez baterijske pohrane. Najpopularniji sustavi u Hrvatskoj.</p>
-              <a class="btn" href="on_grid.html" role="button" style="background-color: #25066e; color:white">Saznajte više</a>
+              <a class="btn" href="on-grid.html" role="button" style="background-color: #25066e; color:white">Saznajte više</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 mt-4">
-          <div class="card shadow">
+          <div id="card" class="card shadow">
             <a href="hybrid.html">
               <img src="pictures/hybrid.png" class="card-img-top" alt="Image 3">
             </a>
@@ -136,7 +159,7 @@
               <p class="card-text">Ispunite upitnik, a naš tim će evaluirati projekt i poslati ponudu.</p>
             </div>
             <div class="col">
-              <a href="upitnik.html"><button class="btn btn-primary" id="tipka_formular" >Upitnik</button></a>
+              <a href="upitnik.html"><button class="btn" id="tipka_formular" >Upitnik</button></a>
             </div>
           </div>
         </div>
@@ -164,7 +187,7 @@
               <label for="message">Poruka:</label>
               <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" id="submit-btn" class="btn btn-primary">Pošalji</button>
+            <button type="submit" id="submit-btn" class="btn">Pošalji</button>
           </form>
           <div id="status"></div>
         </div>
@@ -181,11 +204,13 @@
           <!--Grid column-->
           <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
             <h5 class="text-uppercase">O nama</h5>
+            <div class="">
   
-            <p>
-              Solar Engineering d.o.o je tvrtka specijalizirana za projektiranje, montažu i održavanje solarnih fotonaponskih sustava.
-              Prateći tržište i trendove, nudimo najmodernija rješenja.
-            </p>
+              <p>
+                Solar Engineering d.o.o je tvrtka specijalizirana za projektiranje, montažu i održavanje solarnih fotonaponskih sustava.
+                Prateći tržište i trendove, <br>nudimo najmodernija rješenja.
+              </p>
+            </div>
           </div>
           <!--Grid column-->
   
@@ -202,14 +227,14 @@
                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
                   <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
                 </svg>
-                Ured br. 1: Cesta dr. Franje Tuđmana 736, 21217 Kaštel Novi
+                Sjedište: Treća ulica 2. 21236 Vrlika
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
                   <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
                 </svg>
-                Ured br. 2: Treća ulica 2, 21236 Vrlika
+                Ured br. 1: Cesta dr. Franje Tuđmana 736, 21217 Kaštel Novi
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -280,7 +305,7 @@
   
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color:#25066e; color: rgb(174, 174, 174);">
-       Solar Engineering © 2023 - by studio DWorks
+       Solar Engineering d.o.o © 2023 - by studio DWorks
       </div>
       <!-- Copyright -->
     </footer>
@@ -305,6 +330,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/send-email.js"></script>
+    <script src="js/upitnik.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
