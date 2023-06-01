@@ -226,12 +226,54 @@
   }
 }
 
+/*****CAROUSEL*****/
+
+#carousel-img{
+  height: 70vh; /* Adjust the desired height here */
+  object-fit: cover;
+}
+
+/*****3_CARDS*****/
+
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+#three_cards_img{
+  height: 200px;
+}
+
+
 /*****TEXT*****/
 
-#text{
-  color: #25066e;
-  padding-bottom: 50px;
+.purple-container {
+  background-color: #6c757d;
+  color: white;
+  padding: 50px;
 }
+
+#text-link{
+  text-decoration: none;
+  color: #fe8400;
+  
+}
+
+
+
 
 /*****CARDS*****/
 
