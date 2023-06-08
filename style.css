@@ -237,7 +237,7 @@
 
 /*izbacit za 3 kartice*/
 #nase_usluge{
-  width: 120vh;
+  width: 800px;
   
 }
 .card {
@@ -258,7 +258,7 @@
 }
 
 #three_cards_img{
-  height: 200px;
+  height: 150px;
 }
 
 
