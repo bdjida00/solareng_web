@@ -235,7 +235,11 @@
 
 /*****3_CARDS*****/
 
-
+/*izbacit za 3 kartice*/
+#nase_usluge{
+  width: 120vh;
+  
+}
 .card {
   transition: transform 0.2s;
 }
