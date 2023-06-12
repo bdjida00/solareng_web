@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/proracun.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -79,23 +84,106 @@
     <!--SADRŽAJ-->
     <div class="container mt-5">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <h2>DETALJI I PRIMJER OBRAČUNA</h2>
+            <h4 class="mt-4"><u>Kućanstva – korisnik postrojenja za samoopskrbu</u></h4>
             <p>Ukoliko Vam dolaze računi za kategoriju kućanstvo, 
               elektranu je potrebno projektirati tako da na godišnjoj bazi električna energija poslana u mrežu ne bude veća od električne energije preuzete iz mreže. 
-              Na taj način ostajete u sustavu „Postrojenje za samoopskrbu“ te se vrši najoptimalniji obračun od strane opskrbljivača.</p>
+              Na taj način ostajete u sustavu „Postrojenje za samoopskrbu“ te se vrši najoptimalniji obračun od strane opskrbljivača.
+            </p>
+            <p>
+              Naime, u ovoj kategoriji na mjesečnoj bazi kilovatsat (kWh) poslan u mrežu se „poništava“ sa kWh preuzetim iz mreže. 
+              Naravno da neće uvijek sve biti idealno te se može dogoditi da proizvedete „višak“ električne energije. 
+              Taj „višak“ električne energije opskrbljivač preuzima te ga prebacuje u sljedeći mjesec po cijeni od 80% kupovne cijene:
+
+            </p>
           </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-12">
-                <img src="pictures/cone_tr.png" class="img-fluid mb-3" alt="Image 1">
-              </div>
-      
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <h5>
+              Za bijeli tarifni model:
+            </h5>
+            <p>CiVT = 0,8 * CpVT</p>
+            <p>CiNT = 0,8 * CpNT</p>
+            <h5>Za plavi tarifni model: </h5>
+            <p>CiJT = 0,8 * CpJT</p>
+          </div>
+          <div class="col-md-9">
+            <p id="desc">CiVT = cijena ukupne električne energije predane u mrežu od strane Postrojenja za samoopskrbu u vlasništvu Krajnjeg kupca unutar obračunskog razdoblja, 
+              za vrijeme trajanja više dnevne tarife, izražena u EUR/kWh  
+            </p>
+            <p id="desc">
+              CpVT = cijena ukupne električne energije preuzete iz mreže od strane Krajnjeg kupca unutar obračunskog razdoblja, 
+              za vrijeme trajanja više dnevne tarife, izražena u EUR/kWh  
+            </p>
+            <p id="desc">
+              CiNT = cijena ukupne električne energije predane u mrežu od strane Postrojenja za samoopskrbu u vlasništvu Krajnjeg Kupca unutar obračunskog razdoblja, 
+              za vrijeme trajanja niže dnevne tarife, izražena u EUR/kWh   
+            </p>
+            <p id="desc">
+              CpNT = cijena ukupne električne energije preuzete iz mreže od strane Krajnjeg kupca unutar obračunskog razdoblja, 
+              za vrijeme trajanja niže dnevne tarife, izražena u EUR/kWh    
+            </p>
+            <p id="desc">
+              CiJT = cijena ukupne električne energije predane u mrežu odstrane Postrojenja za samoopskrbu u vlasništvu Krajnjeg kupca unutar obračunskog razdoblja, 
+              za vrijeme trajanja jedinstvene tarife, izražena u EUR/kWh
+            </p>
+            <p id="desc">
+              CpJT = cijena ukupne električne energije preuzete iz mreže od strane Krajnjeg kupca unutar obračunskog razdoblja, 
+              za vrijeme trajanja jedinstvene tarife, izražena u EUR/kWh
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <p>
+              U Hrvatskoj postoje jednotarifna i višetarifna brojila, te se sukladno tome vrši obračun potrošnje električne energije. 
+            </p>
+            <p>
+              Razlika između jednotarifnog i višetarifnog modela je sljedeća:
+            </p>
+            <ul>
+              <li>Kod jednotarifnog modela električna energija se obračunava prema istoj tarifi i danju i noću, 
+                cijena kilovatsata (kWh) je jednaka tijekom cijelog dana
+              </li>
+              <li>Kod višetarifnog modela postoji opcija obračunavanja prema jednoj tarifi (Plavi tarifni model) 
+                ili prema dvije tarife (Bijeli tarifni model)
+              </li>          
+            </ul>
+            <div class="container mt-5 mb-5">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Visoka tarifa (od – do sati)</th>
+                    <th scope="col">Niska tarifa (od – do sati)</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    
+                    <td><b>Zimsko računanje vremena</b></td>
+                    <td>07 – 21</td>
+                    <td>21 - 07</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><b>Ljetno računanje vremena</b></td>
+                    <td>08 - 22</td>
+                    <td>21 - 07</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-      </div>
-
+        
+        
+      
+    </div>
 
     <!-- Footer -->
     <footer class="bg-secondary text-white" id="kontakt">
