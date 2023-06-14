@@ -231,6 +231,8 @@
 #carousel-img{
   height: 70vh; /* Adjust the desired height here */
   object-fit: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /*****3_CARDS*****/
