@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item  order-4">
-              <a id="upitnik-nav" class="nav-link" href="upitnik.html" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Upitnik</a>
+              <a id="nav-link" class="nav-link" href="upitnik.html" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Upitnik</a>
             </li>
             <li class="nav-item  order-3">
               <a id="nav-link" class="nav-link" href="proracun.html" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Primjer obračuna</a>
@@ -61,7 +61,7 @@
               <a id="nav-link" class="nav-link" href="#kontakt" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Kontakt</a>
             </li>
             <li class="nav-item  order-1">
-              <a id="nav-link" class="nav-link" href="#nase_usluge" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Naše usluge</a>
+              <a id="nav-link" class="nav-link" href="#nase_usluge_link" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Naše usluge</a>
             </li>
             <li class="nav-item  order-0">
               <a id="nav-link" class="nav-link" href="index.html" data-toggle="popover" title="Popover title" data-content="Popover content" style="text-align: center;">Početna</a>
@@ -183,7 +183,7 @@
 
 
     <!--CARDS-->
-    <div class="container mt-5 ">
+    <div class="container mt-5" id="nase_usluge_link">
       
       <h1><b>NAŠE USLUGE</b></h1>
       
@@ -250,9 +250,10 @@
 
 
     <!--KONTAKT_FORMA-->
-    <div class="container mt-5 mb-5" id="kontakt-forma">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
+    <div class="container mb-5" id="kontakt-forma">
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          
           <h1 class="text-center mb-4">Kontaktirajte nas</h1>
           <h5 class="text-center mb-5">Postavite nam pitanje i naš tim će vam se obratiti u najkraćem mogućem roku.</h5>
           <form id="email-form">
@@ -271,6 +272,12 @@
             <button type="submit" id="submit-btn" class="btn">Pošalji</button>
           </form>
           <div id="status"></div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <h1 class="text-center">Lokacija</h1>
+          <div class="map-container mt-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d797.3060658726602!2d16.408844611287098!3d43.93430706760289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47601b76c3057f69%3A0xc86d59e75c60e2!2sSolar%20Engineering%20d.o.o.!5e1!3m2!1shr!2shr!4v1686772711508!5m2!1shr!2shr" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </div>
