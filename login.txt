@@ -1,2 +1,3 @@
 user:solareng
 pass:;kCdJ53Fe6Ar1)
+ssh public key pass: 8X}H*P0_i%yC

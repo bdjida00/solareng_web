@@ -233,6 +233,7 @@
   object-fit: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  filter: brightness(80%);
 }
 
 /*****3_CARDS*****/
@@ -284,6 +285,7 @@
 /*****CARDS*****/
 
 #card{
+  
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
