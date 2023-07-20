@@ -121,13 +121,13 @@
   }
 
   .navbar-brand img {
-    max-width: 400px; /* change the value to the maximum width you want */
+    max-width: 350px; /* change the value to the maximum width you want */
   }
 
   /* for mobile devices with screen width less than 576px */
 @media (max-width: 575.98px) {
     .navbar-brand img {
-      max-width: 200px; /* change the value to the maximum width you want for mobile */
+      max-width: 170px; /* change the value to the maximum width you want for mobile */
     }
 }
 
