@@ -268,7 +268,13 @@
 /*****TEXT*****/
 
 .purple-container {
-  background-color: #6c757d;
+  background-color: #45547c;/*#6c757d*/ /*#45547c*/
+  color: white;
+  padding: 50px;
+}
+
+.black-container {
+  background-color: #45547c;
   color: white;
   padding: 50px;
 }
