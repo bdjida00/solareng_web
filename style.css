@@ -2,7 +2,7 @@
 
 /*****TOP_BAR*****/
 .top-bar {
-    background-color: #25066e;
+    background-color: rgb(22, 68, 128);
     height: 30px;
     display: flex;
     justify-content: flex-start;
@@ -37,7 +37,7 @@
   }
 
   #nav-link {
-    color: #25066e ;
+    color: rgb(22, 68, 128) ;
     font-family: "Sora",Sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -53,8 +53,8 @@
     bottom: 0;
     left: 0;
     border-radius: 10px;
-    background-color: #25066e;
-    color: #25066e;
+    background-color: rgb(22, 68, 128);
+    color: rgb(22, 68, 128);
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
     
@@ -121,13 +121,13 @@
   }
 
   .navbar-brand img {
-    max-width: 350px; /* change the value to the maximum width you want */
+    max-width: 150px; /* change the value to the maximum width you want */
   }
 
   /* for mobile devices with screen width less than 576px */
 @media (max-width: 575.98px) {
     .navbar-brand img {
-      max-width: 170px; /* change the value to the maximum width you want for mobile */
+      max-width: 120px; /* change the value to the maximum width you want for mobile */
     }
 }
 
@@ -184,12 +184,12 @@
 }
 
 #saznajte_vise_text:hover{
-  border: 5px solid #fe8400;
+  border: 5px solid rgb(250, 195, 16);
   border-radius: 15px;
 }
 
 #saznajte_vise_text{
-  color: #fe8400;
+  color: rgb(250, 195, 16);/*#fe8400;*/
   text-decoration: none;
   padding: 6px;
   transition: border-color 0.3s ease; /* Add transition property for border color */
@@ -281,7 +281,7 @@
 
 #text-link{
   text-decoration: none;
-  color: #fe8400;
+  color: rgb(255, 196, 0);
   
 }
 
@@ -329,7 +329,7 @@
 #tipka_formular{
   margin-top: 11px;
   width: 200px;
-  background-color: #25066e;
+  background-color: rgb(22, 68, 128);
   color:white;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -345,7 +345,7 @@
 
 #submit-btn{
   width: 200px;
-  background-color: #25066e;
+  background-color: rgb(22, 68, 128);
   color:white;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
