@@ -1,0 +1,14 @@
+# Dependencije (koristimo CDN, ne trebamo node_modules na serveru)
+node_modules/
+
+# SIGURNOST - nikad ne commitati!
+login.txt
+php/db.php
+
+# Uploadane slike korisnika (ostaju na serveru, ne idu u git)
+uploads/
+
+# OS fajlovi
+.DS_Store
+Thumbs.db
+desktop.ini
