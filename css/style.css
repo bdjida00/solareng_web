@@ -356,13 +356,8 @@ body {
 
 @media (max-width: 767px) {
   #nase_usluge_link {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  #nase_usluge_link .card {
-    max-width: 88%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
