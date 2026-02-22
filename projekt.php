@@ -81,7 +81,7 @@ $slike = $slike->fetchAll();
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg sticky-top border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <img class="desktop-logo" src="pictures/newlogo.png" alt="Logo">
                 <img class="mobile-logo" src="pictures/newlogo.png" alt="Logo">
             </a>
@@ -110,7 +110,7 @@ $slike = $slike->fetchAll();
                         </div>
                     </li>
                     <li class="nav-item order-0">
-                        <a class="nav-link" href="index.html" style="text-align:center;">Početna</a>
+                        <a class="nav-link" href="/" style="text-align:center;">Početna</a>
                     </li>
                 </ul>
             </div>
