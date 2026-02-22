@@ -167,6 +167,12 @@ body {
   box-shadow: none;
 }
 
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    text-align: center !important;
+  }
+}
+
 
 /* =============================================
    HERO / CAROUSEL

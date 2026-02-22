@@ -31,7 +31,7 @@ $zadnji_projekti = $db->query('
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/global.css">
     <style>
-        .project-card { border: none; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform .25s ease, box-shadow .25s ease; height: 100%; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+        .project-card { border: none; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform .25s ease, box-shadow .25s ease; height: 100%; text-decoration: none; color: inherit; display: flex; flex-direction: column; background: #fff; }
         .project-card:hover { transform: translateY(-6px); box-shadow: 0 8px 28px rgba(0,0,0,0.15); color: inherit; }
         .project-card .thumb { height: 200px; object-fit: cover; width: 100%; }
         .project-card .thumb-placeholder { height: 200px; background: #e9ecef; display: flex; align-items: center; justify-content: center; color: #adb5bd; font-size: 3rem; }
@@ -40,8 +40,9 @@ $zadnji_projekti = $db->query('
         .project-card .lokacija { font-size: 0.82rem; color: #6c757d; margin-bottom: 10px; }
         .project-card .specs { margin-top: auto; display: flex; flex-wrap: wrap; gap: 5px; }
         .spec-badge { background: #eef2f8; color: #164480; font-size: 0.75rem; font-weight: 600; border-radius: 20px; padding: 2px 9px; }
-        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
-        .section-header h2 { margin-bottom: 0; }
+        .section-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; }
+        .section-header h2 { font-size: 1.6rem; font-weight: 800; color: #164480; letter-spacing: 0.05em; margin-bottom: 0; }
+        .section-header h2::after { content: ''; display: block; margin-top: 8px; height: 3px; width: 50px; background: #f5c518; border-radius: 2px; }
     </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3HY7Z62M1"></script>
@@ -284,7 +285,7 @@ $zadnji_projekti = $db->query('
     <?php endif; ?>
 
     <!--TEXT – OPREMA-->
-    <div class="black-container mt-5">
+    <div class="black-container">
         <div class="container text-center">
             <div id="text">
                 <h1><i><a href="oprema.html" id="text-link">Saznajte više</a> o opremi koju nudimo</i></h1>
