@@ -248,7 +248,8 @@ $zadnji_projekti = $db->query('
 
     <!--ZADNJI PROJEKTI-->
     <?php if (!empty($zadnji_projekti)): ?>
-    <div class="container mt-5 mb-2">
+    <div style="background:#f0f4f8; padding:3.5rem 0; margin-top:3rem;">
+    <div class="container">
         <div class="section-header">
             <h2><b>NAŠI PROJEKTI</b></h2>
             <a href="projekti.php" class="btn" style="background:#164480;color:white;font-weight:600;border-radius:8px;">Svi projekti &rarr;</a>
@@ -278,6 +279,7 @@ $zadnji_projekti = $db->query('
             </div>
             <?php endforeach; ?>
         </div>
+    </div>
     </div>
     <?php endif; ?>
 
