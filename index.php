@@ -203,9 +203,9 @@ $zadnji_projekti = $db->query('
     <!--CARDS – NAŠE USLUGE-->
     <div class="container mt-5" id="nase_usluge_link">
         <h2><b>NAŠE USLUGE</b></h2>
-        <div class="row">
-            <div class="col-md-3 mt-4">
-                <div class="card shadow">
+        <div class="row g-3 mt-1">
+            <div class="col-6 col-md-3">
+                <div class="card shadow h-100">
                     <a href="projektiranje.html"><img src="pictures/projektiranje.jpg" class="card-img-top" alt="Projektiranje"></a>
                     <div class="card-body">
                         <h5 class="card-title">Projektiranje</h5>
@@ -214,8 +214,8 @@ $zadnji_projekti = $db->query('
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mt-4">
-                <div class="card shadow">
+            <div class="col-6 col-md-3">
+                <div class="card shadow h-100">
                     <a href="on-grid.html"><img src="pictures/on_grid.png" class="card-img-top" alt="On-grid"></a>
                     <div class="card-body">
                         <h5 class="card-title">Mrežni fotonaponski sustavi</h5>
@@ -224,8 +224,8 @@ $zadnji_projekti = $db->query('
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mt-4">
-                <div class="card shadow">
+            <div class="col-6 col-md-3">
+                <div class="card shadow h-100">
                     <a href="hybrid.html"><img src="pictures/hybrid.png" class="card-img-top" alt="Hibridni"></a>
                     <div class="card-body">
                         <h5 class="card-title">Hibridni fotonaponski sustavi</h5>
@@ -234,8 +234,8 @@ $zadnji_projekti = $db->query('
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mt-4">
-                <div class="card shadow">
+            <div class="col-6 col-md-3">
+                <div class="card shadow h-100">
                     <a href="elektroinstalacije.html"><img src="pictures/elektroinstalacije_thumb1.jpg" class="card-img-top" alt="Elektroinstalacije"></a>
                     <div class="card-body">
                         <h5 class="card-title">Elektroinstalacijske usluge</h5>

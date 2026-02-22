@@ -354,6 +354,13 @@ body {
   padding: 20px 0;
 }
 
+@media (max-width: 767px) {
+  #nase_usluge_link {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 #nase_usluge_link h2 {
   font-size: 1.6rem;
   font-weight: 800;
