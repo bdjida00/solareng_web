@@ -11,3 +11,133 @@ h1, h2, h3, h4, h5, h6 {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+/* ========================
+   Page hero banner
+   ======================== */
+.page-hero {
+  background: linear-gradient(135deg, #1a4480 0%, #0d2d5e 100%);
+  padding: 2.75rem 0;
+}
+
+.page-hero .page-hero-label {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.4rem;
+}
+
+.page-hero h1 {
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ========================
+   Content page typography
+   ======================== */
+.content-page {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.content-page h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a4480;
+  margin-bottom: 1.75rem !important;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.content-page h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  background: #f0c040;
+  border-radius: 2px;
+}
+
+.content-page h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a4480;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.content-page h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.content-page h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a4480;
+  margin-bottom: 0.5rem;
+}
+
+.content-page p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #2d3748;
+  margin-bottom: 1.2rem;
+}
+
+.content-page ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.content-page ul li {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 0.45rem;
+  color: #2d3748;
+}
+
+.content-page .table {
+  font-size: 0.95rem;
+}
+
+.content-page .table th {
+  font-weight: 600;
+  color: #1a4480;
+  background: #f0f4f8;
+}
+
+.formula-box {
+  background: #f0f4f8;
+  border-left: 4px solid #1a4480;
+  border-radius: 0 6px 6px 0;
+  padding: 1.25rem 1.25rem 0.75rem;
+}
+
+.formula-box h6 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a4480;
+  margin-bottom: 0.6rem;
+}
+
+.formula-box code {
+  display: block;
+  font-size: 1rem;
+  color: #1a4480;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-family: 'Courier New', monospace;
+  background: transparent;
+  padding: 0;
+}
