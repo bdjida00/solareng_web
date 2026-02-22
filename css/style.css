@@ -359,6 +359,11 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  #nase_usluge_link .card {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #nase_usluge_link h2 {

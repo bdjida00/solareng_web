@@ -132,8 +132,13 @@ $slike = $slike->fetchAll();
             <h1><?= htmlspecialchars($p['naslov']) ?></h1>
             <div class="lokacija"><i class="bi bi-geo-alt-fill me-1"></i><?= htmlspecialchars($p['lokacija']) ?></div>
             <?php if ($p['datum_ugradnje']): ?>
+                <?php
+                $hr_mjeseci = ['Siječanj','Veljača','Ožujak','Travanj','Svibanj','Lipanj','Srpanj','Kolovoz','Rujan','Listopad','Studeni','Prosinac'];
+                $dt = new DateTime($p['datum_ugradnje']);
+                $datum_hr = $hr_mjeseci[(int)$dt->format('n') - 1] . ' ' . $dt->format('Y');
+                ?>
                 <div class="mt-2" style="opacity:.7;font-size:.85rem">
-                    <i class="bi bi-calendar3 me-1"></i>Ugradnja: <?= date('d.m.Y', strtotime($p['datum_ugradnje'])) ?>
+                    <i class="bi bi-calendar3 me-1"></i>Ugradnja: <?= $datum_hr ?>
                 </div>
             <?php endif; ?>
         </div>
@@ -189,12 +194,6 @@ $slike = $slike->fetchAll();
                             <div class="value"><?= htmlspecialchars($p['tip_invertera']) ?></div>
                         </div>
                         <?php endif; ?>
-                        <?php if ($p['lokacija']): ?>
-                        <div class="spec-item">
-                            <div class="label"><i class="bi bi-geo-alt me-1"></i>Lokacija</div>
-                            <div class="value"><?= htmlspecialchars($p['lokacija']) ?></div>
-                        </div>
-                        <?php endif; ?>
                     </div>
                     <?php if ($p['napomena']): ?>
                     <div class="mt-4 pt-3" style="border-top:1px solid #e9ecef;">
@@ -204,9 +203,6 @@ $slike = $slike->fetchAll();
                     <?php endif; ?>
                 </div>
 
-                <a href="upitnik.html" class="btn w-100" style="background:#164480;color:white;font-weight:700;padding:12px;border-radius:8px;">
-                    <i class="bi bi-clipboard-check me-2"></i>Zatraži besplatnu ponudu
-                </a>
             </div>
 
         </div>

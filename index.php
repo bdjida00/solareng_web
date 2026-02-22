@@ -204,7 +204,7 @@ $zadnji_projekti = $db->query('
     <div class="container mt-5" id="nase_usluge_link">
         <h2><b>NAŠE USLUGE</b></h2>
         <div class="row g-3 mt-1">
-            <div class="col-6 col-md-3">
+            <div class="col-md-3">
                 <div class="card shadow h-100">
                     <a href="projektiranje.html"><img src="pictures/projektiranje.jpg" class="card-img-top" alt="Projektiranje"></a>
                     <div class="card-body">
@@ -214,7 +214,7 @@ $zadnji_projekti = $db->query('
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-md-3">
                 <div class="card shadow h-100">
                     <a href="on-grid.html"><img src="pictures/on_grid.png" class="card-img-top" alt="On-grid"></a>
                     <div class="card-body">
@@ -224,7 +224,7 @@ $zadnji_projekti = $db->query('
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-md-3">
                 <div class="card shadow h-100">
                     <a href="hybrid.html"><img src="pictures/hybrid.png" class="card-img-top" alt="Hibridni"></a>
                     <div class="card-body">
@@ -234,7 +234,7 @@ $zadnji_projekti = $db->query('
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-md-3">
                 <div class="card shadow h-100">
                     <a href="elektroinstalacije.html"><img src="pictures/elektroinstalacije_thumb1.jpg" class="card-img-top" alt="Elektroinstalacije"></a>
                     <div class="card-body">
@@ -270,9 +270,6 @@ $zadnji_projekti = $db->query('
                         <div class="specs">
                             <?php if ($p['snaga_kw']): ?>
                                 <span class="spec-badge"><i class="bi bi-lightning-charge-fill me-1"></i><?= $p['snaga_kw'] ?> kWp</span>
-                            <?php endif; ?>
-                            <?php if ($p['tip_panela']): ?>
-                                <span class="spec-badge"><i class="bi bi-sun me-1"></i><?= htmlspecialchars($p['tip_panela']) ?></span>
                             <?php endif; ?>
                         </div>
                     </div>

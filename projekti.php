@@ -139,12 +139,6 @@ $projekti = $db->query('
                             <?php if ($p['snaga_kw']): ?>
                                 <span class="spec-badge"><i class="bi bi-lightning-charge-fill me-1"></i><?= $p['snaga_kw'] ?> kWp</span>
                             <?php endif; ?>
-                            <?php if ($p['tip_panela']): ?>
-                                <span class="spec-badge"><i class="bi bi-sun me-1"></i><?= htmlspecialchars($p['tip_panela']) ?></span>
-                            <?php endif; ?>
-                            <?php if ($p['tip_invertera']): ?>
-                                <span class="spec-badge"><i class="bi bi-cpu me-1"></i><?= htmlspecialchars($p['tip_invertera']) ?></span>
-                            <?php endif; ?>
                         </div>
                     </div>
                 </a>
